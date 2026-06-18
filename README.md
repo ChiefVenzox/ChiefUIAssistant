@@ -1,5 +1,7 @@
 # ChiefUI Assistant
 
+[English](README.en.md) | **Türkçe**
+
 Yerel, **sıfırdan** eğitilen, UI/CSS üretimine odaklı bir AI asistanı.
 Hiçbir hazır LLM / bulut API kullanılmaz (LLaMA, Qwen, Ollama, GGUF, OpenAI,
 Claude yok). Model PyTorch ile sıfırdan eğitilir.
@@ -7,7 +9,13 @@ Claude yok). Model PyTorch ile sıfırdan eğitilir.
 > Donanım hedefi: NVIDIA CUDA GPU (~6 GB, GTX 1660 Ti). CPU fallback testte çalışır.
 > MVP tek PC; mimari ileride PC 2'yi worker olarak eklemeye uygun (bkz. docs).
 
-Prompt → `<html>/<css>/<notes>` yapısal çıktı → canlı önizleme + kod sekmeleri + ZIP.
+Prompt → `@@HTML / @@CSS / @@NOTES` yapısal çıktı → canlı önizleme + kod sekmeleri + ZIP.
+
+📖 **[Wiki](https://github.com/ChiefVenzox/ChiefUIAssistant/wiki)** —
+[Mimari](https://github.com/ChiefVenzox/ChiefUIAssistant/wiki/Architecture) ·
+[Eğitim](https://github.com/ChiefVenzox/ChiefUIAssistant/wiki/Training) ·
+[Veri Formatı](https://github.com/ChiefVenzox/ChiefUIAssistant/wiki/Dataset-Format) ·
+[API](https://github.com/ChiefVenzox/ChiefUIAssistant/wiki/API)
 
 ## Mimari
 
@@ -90,5 +98,3 @@ Sıfırdan ~30M model, küçük veriyle **çalışır ama çıktı başta basitt
 HTML/CSS için **binlerce** iyi örnek + uzun eğitim gerekir. MVP'nin amacı: uçtan
 uca çalışan boru hattı ve temiz, geliştirilebilir mimari. Veriyi büyütmek en
 yüksek etkili adımdır.
-```
-```
