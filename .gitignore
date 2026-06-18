@@ -1,0 +1,60 @@
+# ============================================================
+#  ChiefUI Assistant - .gitignore
+#  Buyuk/uretilen/gizli dosyalar repoya GIRMEZ.
+# ============================================================
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+env/
+.python-version
+
+# ---- Egitim ciktilari / model agirliklari / veri / DB ----
+# (modeli ve veriyi sen kendin uretirsin: build_seed -> tokenizer -> train)
+backend/checkpoints/
+backend/datasets/bin/
+backend/datasets/chat_bin/
+backend/datasets/seed.jsonl
+backend/database/
+*.bin
+*.pt
+*.ckpt
+*.safetensors
+*.sqlite
+*.sqlite3
+*.db
+
+# ---- Node / frontend ----
+node_modules/
+frontend/node_modules/
+frontend/dist/
+dist/
+.vite/
+npm-debug.log*
+yarn-debug.log*
+
+# ---- Sirlar / ortam degiskenleri ----
+.env
+.env.*
+!.env.example
+*.local
+secrets.*
+*.key
+*.pem
+
+# ---- Editor / IDE / OS ----
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---- Loglar / gecici ----
+*.log
+tmp/
+.cache/
